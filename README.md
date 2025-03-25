@@ -1,28 +1,20 @@
-AI-Project: Emotion Recognition & Contextual Summarization
+#AI-Project: Emotion Recognition & Contextual Summarization
 
-Project Overview
+##Project Overview
 
 This project, Emotion Recognition and Contextual Summarization for Mental Health Conversations, provides AI-driven mental health assistance by recognizing emotions in conversations and summarizing contextually relevant content. We implemented two distinct approaches to achieve robust emotion detection and contextual understanding:
 
-Audio-Driven Emotion Recognition (ADER) – Analyzes speech patterns for emotion recognition.
-
-Contextual Summarization and Emotion Prediction (CSEP) – Extracts emotional context directly from text while summarizing conversations.
-
-Methodology
-
-1. Audio-Driven Emotion Recognition (ADER)
+###1. Audio-Driven Emotion Recognition (ADER)
 
 Converts text to speech using Google Text-to-Speech (GTTS).
 
 Extracts key speech features using Mel-frequency cepstral coefficients (MFCC).
 
-Trains XGBoost and Random Forest models for emotion classification.
+Trains XGBoost and Random Forest models with K-fold cross-validation for emotion classification.
 
 Predicts emotions from unseen audio inputs for enhanced conversational analysis.
 
-Flow Diagram: (Add link or image here)
-
-2. Contextual Summarization and Emotion Prediction (CSEP)
+###2. Contextual Summarization and Emotion Prediction (CSEP)
 
 Tokenizes and encodes text data, including Dialogue Acts & Emotions.
 
@@ -32,9 +24,7 @@ Applies BART for summarization when text length exceeds a threshold.
 
 Predicts emotional states from both raw and summarized text.
 
-Flow Diagram: (Add link or image here)
-
-How to Run
+##How to Run
 
 1. Audio-Driven Emotion Recognition (ADER)
 
@@ -70,7 +60,7 @@ Run Emotions-Detection-Using-Text-Utterance.ipynb (Detects emotions from text)
 
 Upload any text; if word count > 30, it summarizes before emotion prediction
 
-Key Contributions
+##Key Contributions
 
 Emotion Recognition through Audio & Text: ADER analyzes speech while CSEP enhances text-based emotion detection.
 
